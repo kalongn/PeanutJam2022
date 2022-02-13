@@ -1,0 +1,198 @@
+body{
+  background: linear-gradient(rgb(157, 132, 214),#1d61b9);
+  background-size: 400% 400%;
+  font:15pt Futura;
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar
+{
+  display:none;
+}
+
+.header{
+  text-align: center;
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 60px;
+  color: black;
+}
+
+.container
+{
+  display: flex;
+  justify-content: center;
+}
+
+.OG {
+  height:420px;
+  width: 420px;
+}
+
+.guider {
+  font-weight: bold;
+}
+
+.item:first-child
+{
+  padding: 20px;
+}
+
+.item:nth-child(2)
+{
+  padding: 20px;
+}
+
+
+.button:hover
+{
+  background-color: #888888;
+}
+
+.button:active
+{
+  background-color: #666666;
+}
+
+.button{
+  font:18pt Futura;
+  width:170px;
+  height:50px;
+  text-decoration: none;
+  border-radius: 18px;
+  border: 2px solid black;
+  margin-top: 6px;
+  cursor:pointer;
+}
+
+.moves{
+  font:18pt Futura;
+  margin: auto auto;
+}
+
+.text{
+  font:bold 18pt Futura;
+  margin: auto auto;
+}
+
+#victory {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.victoryText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+} 
+
+#writingSupplement {
+  max-width: 700px;
+  background: #ede;
+  border-radius: 5px;
+  margin: auto auto;
+  display:block;
+}
+
+#tips {
+  display: none;
+}
+
+.footer {
+  background: rgb(146, 141, 156);
+  text-align: center;
+  position: fixed;
+  left:0;
+  right:0;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.t1,.t2,.t3,.t4,.t5,.t6,.t7,.t8,.t9,.t10,.t11,.t12,.t13,.t14,.t15,.t16{
+  display: table-cell;
+  width:100px;
+  height:100px;
+  border: 3px solid white;
+  background-image: url(4x4.png);
+  cursor:pointer;
+}
+
+.t1:hover,.t2:hover,.t3:hover,.t4:hover,.t5:hover,.t6:hover,.t7:hover,.t8:hover,.t9:hover,.t10:hover,.t11:hover,.t12:hover,.t13:hover,.t14:hover,.t15:hover{
+  filter: brightness(85%);
+}
+
+/*row 1*/
+
+.t1{
+  background-position: 0px 0px;
+}
+.t2{
+  background-position: -100px 0px;
+}
+.t3{
+  background-position: -200px 0px;
+}
+.t4{
+  background-position: -300px 0px;
+}
+
+/*row 2*/
+
+.t5{
+  background-position: 0px -100px;
+}
+.t6{
+  background-position: -100px -100px;
+}
+.t7{
+  background-position: -200px -100px;
+}
+.t8{
+  background-position: -300px -100px;
+}
+
+/*row 3*/
+
+.t9{
+  background-position: 0px -200px;
+}
+.t10{
+  background-position: -100px -200px;
+}
+.t11{
+  background-position: -200px -200px;
+}
+.t12{
+  background-position: -300px -200px;
+}
+
+/*row 3*/
+
+.t13{
+  background-position: 0px -300px;
+}
+.t14{
+  background-position: -100px -300px;
+}
+.t15{
+  background-position: -200px -300px;
+}
+.t16{
+  background: white;
+  cursor: default;
+}

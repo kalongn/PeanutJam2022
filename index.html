@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Slider Puzzle</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="startWeb();">
+	<script src="script.js">
+
+	</script>
+
+	<center>
+
+		<div id="victory">
+			<div class="victoryText">
+				You win
+				</br>
+				<button class = "button" onClick = "off();">Reset Game</button>
+			</div>
+    </div>
+    
+	<h1 class="header">Slidle</h1>
+
+		<div class="container">
+			<div class="guider">Original Image:
+				</br>
+				<img src="4x4.png" alt="Original image" class="item OG">
+      </div>
+
+      <div class="guider"> Puzzle: 
+			<div class="item" id="table" style="display : table">
+				<div id="r1" style="display : table-row;">
+					<div id="c11" class="t1" onClick="clickt(1,1);"></div>
+					<div id="c12" class="t2" onClick="clickt(1,2);"></div>
+					<div id="c13" class="t3" onClick="clickt(1,3);"></div>
+					<div id="c14" class="t4" onClick="clickt(1,4);"></div>
+				</div>
+				<div id="r2" style="display : table-row;">
+					<div id="c21" class="t5" onClick="clickt(2,1);"></div>
+					<div id="c22" class="t6" onClick="clickt(2,2);"></div>
+					<div id="c23" class="t7" onClick="clickt(2,3);"></div>
+					<div id="c24" class="t8" onClick="clickt(2,4);"></div>
+				</div>
+				<div id="r3" style="display : table-row;">
+					<div id="c31" class="t9" onClick="clickt(3,1);"></div>
+					<div id="c32" class="t10" onClick="clickt(3,2);"></div>
+					<div id="c33" class="t11" onClick="clickt(3,3);"></div>
+					<div id="c34" class="t12" onClick="clickt(3,4);"></div>
+				</div>
+				<div id="r4" style="display : table-row;">
+					<div id="c41" class="t13" onClick="clickt(4,1);"></div>
+					<div id="c42" class="t14" onClick="clickt(4,2);"></div>
+					<div id="c43" class="t15" onClick="clickt(4,3);"></div>
+					<div id="c44" class="t16" onClick="clickt(4,4);"></div>
+				</div>
+			</div>
+      </div>
+	</div>
+
+  <span class = "text">Moves: </span><span id = "nom" class = "moves">0</span>
+  <span class="text">Timer: <span id = "ctrout" class = "moves">0</span> seconds </span>
+  </br>
+  <button class = "button" onClick = "startGame();">Start Game</button>
+  <button class = "button" onClick = "resetGame();">Reset Game</button>
+  <button id="buttonTXT" class="button" onClick="muteButton();">Mute SFX</button>
+  <!--<button class = "button" onClick = "autoSolver();">AutoWin</button>-->
+
+  <div id="writingSupplement" class="text">
+    <h1>RULES</h1>
+    <div class="text">
+      Use the arrows keys or wasd or mouse to move the puzzle tiles into the blank slot. Move the puzzle tile until it matches the original image on the left to win. 
+    </div>
+    </br>
+    <button class="button" onclick = "showTips();">TIPS</button>
+    <div id="tips" class="text">
+      1. Solve from left to right. 
+      </br>
+      2. Find the first tile of the corner you choose to start in.
+      </br>
+      3. Consider the three tiles close to the blank slot so that those tiles plus the blank slot form a 2x2 square.
+      </br>
+      4. Swap those three tiles around clockwise to get the desired tile closer to the position in the original image.
+      </br>
+      5. For the edge tiles, move the desired tile to under the row its supposed to be in.
+      </br>
+      6. Move that tile to the opposite edge in that row.
+      </br>
+      7. Move the tiles so that the desired edge is where the blank slot is.
+      </br>
+      8. Push the tiles in the desired row towards the desired edge's side.
+      </br>
+      9. Swap the three tiles around the blank slot like before. One of those tiles should be the desired edge tile.
+      </br>
+      10. Keep swapping it like that to move it towards the desired edge.
+      </br>
+      11. Move onto the next row.
+      </br>
+      12. Keep trying :)
+    </div>
+  </div>
+
+  </br>
+  <div class="footer">
+    <span>
+      KLS.GGⒸ, Developer: Ka Long Ngai, WIP.
+    </span>
+  </div>
+  </center>
+</body>
+</html>
